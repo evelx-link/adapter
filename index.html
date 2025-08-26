@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/logo.png" type="image/png">
+    <title>EvelX | Модерация</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h1 class="title-logo"><img src="images/logo.png" alt="">EvelX | Переходник</h1>
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="#team" class="nav-link active" data-section="team">Команда Проекта</a></li>
+                    <li><a href="#regulations" class="nav-link" data-section="regulations">Регламент</a></li>
+                    <li><a href="#candidates" class="nav-link" data-section="candidates">Регламент Кандидатов</a></li>
+                    <li><a href="#manuals" class="nav-link" data-section="manuals">Мануалы</a></li>
+                </ul>
+            </nav>
+            <button class="menu-btn" popovertarget="menu">☰</button>
+        </div>
+    </header>
+
+    <!-- Мобильное меню -->
+
+    <div popover id="menu">
+        <button class="close-btn" popovertarget="menu" popovertargetaction="hide">✖️</button>
+        <nav>
+          <ul>
+            <li><a href="#team" data-section="team" class="nav-link menu-link">Команда Проекта</a></li>
+            <li><a href="#regulations" data-section="regulations" class="nav-link menu-link">Регламент</a></li>
+            <li><a href="#candidates" data-section="candidates" class="nav-link menu-link">Регламент Кандидатов</a></li>
+            <li><a href="#manuals" data-section="manuals" class="nav-link menu-link">Мануал</a></li>
+          </ul>
+        </nav>
+    </div>
+
+    <main class="container">
+        <!-- Таблица команды проекта -->
+        <section id="team" class="content-section active">
+            <h2 class="table-title">Команда Проекта</h2>
+            <div class="table-container">
+                <table class="team-table">
+                    <thead>
+                        <tr>
+                            <th>Должность</th>
+                            <th>Ник</th>
+                            <th>Репутация</th>
+                            <th>Warn</th>
+                        </tr>
+                    </thead>
+                    <tbody id="team-tbody">
+                        <tr>
+                            <td class="position">Владелец</td>
+                            <td class="nickname">Restless</td>
+                            <td class="reputation">∞</td>
+                            <td class="warn">—</td>
+                        </tr>
+                        <tr>
+                            <td class="position">Со-Владелец</td>
+                            <td class="nickname">MrIglobrux</td>
+                            <td class="reputation">∞</td>
+                            <td class="warn">—</td>
+                        </tr>
+                        <tr>
+                            <td class="position">Тех.Админ</td>
+                            <td class="nickname">Overwrite</td>
+                            <td class="reputation">—</td>
+                            <td class="warn">—</td>
+                        </tr>
+                        <tr>
+                            <td class="position">Старший Администратор | Куратор</td>
+                            <td class="nickname">brom</td>
+                            <td class="reputation">—</td>
+                            <td class="warn">—</td>
+                        </tr>
+                        <tr>
+                            <td class="position">Старший Администратор | Тех.Поддержка</td>
+                            <td class="nickname">MemArhiv</td>
+                            <td class="reputation">—</td>
+                            <td class="warn">—</td>
+                        </tr>
+                        <tr>
+                            <td class="position">ВРИО Куратор</td>
+                            <td class="nickname">amoktopmk</td>
+                            <td class="reputation">—</td>
+                            <td class="warn">0/3</td>
+                        </tr>
+                        <tr>
+                            <td class="position">Заместитель Куратора</td>
+                            <td class="nickname">_olegator_</td>
+                            <td class="reputation">—</td>
+                            <td class="warn">0/3</td>
+                        </tr>
+                        <tr>
+                            <td class="position">Модератор I</td>
+                            <td class="nickname">Joker_gg</td>
+                            <td class="reputation">4200</td>
+                            <td class="warn">0/3</td>
+                        </tr>
+                        <tr>
+                            <td class="position">Младший Модератор II</td>
+                            <td class="nickname">Jyrame</td>
+                            <td class="reputation">2200</td>
+                            <td class="warn">0/3</td>
+                        </tr>
+                        <tr>
+                            <td class="position">Младший Модератор I</td>
+                            <td class="nickname">ftden4ik</td>
+                            <td class="reputation">1220</td>
+                            <td class="warn">1/3</td>
+                        </tr>
+                        <tr>
+                            <td class="position">Младший Модератор I</td>
+                            <td class="nickname">popochka842</td>
+                            <td class="reputation">860</td>
+                            <td class="warn">1/3</td>
+                        </tr>
+                        <tr>
+                            <td class="position">Младший Модератор I</td>
+                            <td class="nickname">NIKEL</td>
+                            <td class="reputation">2065</td>
+                            <td class="warn">1/3</td>
+                        </tr>
+                        <tr>
+                            <td class="position">Младший Модератор I</td>
+                            <td class="nickname">titledmxmkaa</td>
+                            <td class="reputation">150</td>
+                            <td class="warn">0/3</td>
+                        </tr>
+                        <tr>
+                            <td class="position">Младший Модератор I</td>
+                            <td class="nickname">claca</td>
+                            <td class="reputation">—</td>
+                            <td class="warn">0/3</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <h2 class="table-title">Отдел Аттестаций</h2>
+                <table class="team-table">
+                    <thead>
+                        <th>Ник</th>
+                        <th>Должность</th>
+                        <th>Ранг</th>
+                        <th>Аттестации</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="position nick">МemArhiv</td>
+                            <td class="nickname rang">Тех.Поддержка</td>
+                            <td class="reputation tier">Tier - 2</td>
+                            <td class="warn certification">Tier 5 - Tier 2</td>
+                        </tr>
+                        <tr>
+                            <td class="position nick">amoktopmk</td>
+                            <td class="nickname rang">Заместитель Куратора</td>
+                            <td class="reputation tier">Tier - 3</td>
+                            <td class="warn certification">Tier 5 - Tier 3</td>
+                        </tr>
+                        <tr>
+                            <td class="position nick">_olegator_</td>
+                            <td class="nickname ranf">Заместитель Куратора</td>
+                            <td class="reputation tier">Tier - 3</td>
+                            <td class="warn certification">Tier 5 - Tier 3</td>
+                        </tr>
+                    </tbody>
+                </table>
+        </section>
+
+        <!-- Регламент модерации -->
+        <section id="regulations" class="content-section">
+            <h2>Регламент Модерации</h2>
+            <div class="regulation-content">
+                <div class="regulation-header">
+                    <h3>EvelX | Глава II - Основное положение</h3>
+                </div>
+                
+                <div class="regulation-section">
+                    <h4>Общие правила</h4>
+                    <ul>
+                        <li>Каждый участник Команды Проекта обязан соблюдать субординацию, общаясь в официальных ресурсах Проекта с вышестоящими лицами, а также проявлять уважение к игрокам сервера и остальным участникам Команды Проекта.</li>
+                        <li class="info">Всем участникам Команды Проекта запрещается как-либо оскорблять/негативно выражаться в сторону игроков (даже в шуточной форме), других участников Команды Проекта, а также Администрации во всех официальных ресурсах Проекта.</li>
+                        <li>Каждый участник Команды Проекта обязуется общаться уважительно со всеми игроками проекта, включая как официальные ресурсы Проекта, так и все, что с ним связано, например: личные сообщения вне сервера.</li>
+                        <li>Всем участникам Команды Проекта запрещается злоупотреблять ненормативной лексикой на любых официальных ресурсах Проекта, включая сам сервер.</li>
+                        <li>Участникам Команды Проекта строго запрещается разглашать какую-либо служебную информацию (включая открытую) игрокам вне Команды Проекта (переписки, демонстрировать экран во время игры на сервере и прочее).</li>
+                        <li>Участник Команды Проекта обязуется включить двухэтапную аутентификацию аккаунта через официальную группу ВКонтакте Проекта.</li>
+                        <li>Каждый участник Команды Проекта обязан, как и все остальные игроки, соблюдать основные правила Проекта и в случае нарушения этих правил - участник Команды Проекта будет наказан в большей мере.</li>
+                        <li>При поступлении в Команду Проекта каждый участник обязуется сдать входную аттестацию по знаниям проведения проверок, для этого Стажеру уделяется неделя с момента поступления и три попытки на прохождение.</li>
+                        <li class="info">В случае, если Стажер не успел и/или не смог сдать аттестацию с трех попыток - он будет снят, с возможностью повторного поступления по истечению 31 дня с момента снятия.</li>
+                        <li>Максимальная комиссия со сделки для участников Команды Проекта - 5 процентов.</li>
+                        <li class="info">Случай, в котором игрок добровольно выдает вам больше комиссионных (чаевые) - не считается нарушением данного правила.</li>
+                        <li>Любые действия, относящиеся к Модерации сервера (проведение сделок, проверок, слежка за игроками, ивентами и тому прочее) - подлежат видеофиксации. Запись экрана необходимо хранить у себя минимум 72 часа и при необходимости предоставить Старшей Модерации или вышестоящим лицам.</li>
+                    </ul>
+                </div>
+
+                <div class="regulation-section">
+                    <h4>Обязанности</h4>
+                    <ul>
+                        <li>Каждый участник Команды Проекта, начиная с должности Младший Модератор - обязуется выполнять еженедельную норму для Команды Проекта. На данный момент она составляет - 15 банов в неделю.</li>
+                        <li class="info">Рабочая неделя начинается с воскресенья (22:00 по МСК времени) и заканчивается этим же днем недели и временем.</li>
+                        <li>Помимо прочего, каждый участник Команды Проекта, имеющий другие обязанности, должен выполнять их в полной мере (например: проведение аттестаций, рассмотр тикетов на поступление в Команду Проекта и тому прочее).</li>
+                        <li class="info">В случае, если участник Команды Проекта не справляется со своими обязанности, ему может быть выдан строгий выговор. Если участник Команды Проекта не справляется с дополнительными обязанностями, он может быть понижен в должности.</li>
+                    </ul>
+                </div>
+
+                <div class="regulation-section">
+                    <h4>Зарплата</h4>
+                    <p>На данный момент в роли заработной платы для участников Команды Проекта являются Аметисты (донат-валюта сервера). Она выдается каждому участнику Команды Проекта, выполнившему свои обязанности за неделю.</p>
+                    
+                    <div class="salary-tables">
+                        <div class="salary-table">
+                            <h5>По должностям:</h5>
+                            <ul>
+                                <li>Младший Модератор I - 15.000 аметистов</li>
+                                <li>Младший Модератор II - 20.000 аметистов</li>
+                                <li>Модератор I - 30.000 аметистов</li>
+                                <li>Модератор II - 35.000 аметистов</li>
+                                <li>Старший Модератор - 45.000 аметистов</li>
+                                <li>Главный Модератор и Заместитель Куратора - 50.000 аметистов</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="salary-table">
+                            <h5>По активности:</h5>
+                            <ul>
+                                <li>1 место - 25.000 аметистов</li>
+                                <li>2 место - 20.000 аметистов</li>
+                                <li>3 место - 15.000 аметистов</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="regulation-section">
+                    <h4>Репутация</h4>
+                    <p>Репутация - является одним из показателей по которым выносится решения по повышениям должности и заработной платы. Репутация в Команде Проекта представлена в виде очков репутации, которые зарабатываются путем Модерации сервера.</p>
+                    
+                    <ul>
+                        <li>Одна выданная блокировка аккаунта - 15 очков репутации</li>
+                        <li>Одна проведенная сделка - 15 очков репутации</li>
+                        <li>Один проспеканный ивент - 10 очков репутации</li>
+                        <li>Одна выданная блокировка чата - 5 очков репутации</li>
+                        <li>Одна рассмотренная жалоба в Discord (для Ст. Модерации) - 10 очков репутации</li>
+                        <li>Одна проведенная аттестация (для Аттестующих) - 50 очков репутации</li>
+                        <li>Одно проведенное собеседование (для Отдела Кадров) - 50 очков репутации</li>
+                    </ul>
+                    
+                    <p class="info">Помимо прочего, очки репутации могут быть зачислены дополнительно Администрацией Проекта за определенные заслуги в Команде Проекта.</p>
+                </div>
+
+                <div class="regulation-section">
+                    <h4>Запреты</h4>
+                    <ul class="prohibitions">
+                        <li>Строго запрещается использовать права Модератора в личных целях</li>
+                        <li>Строго запрещается использовать права Модератора не по назначению</li>
+                        <li>Строго запрещается телепортировать игроков к себе во время слежки</li>
+                        <li>Строго запрещается писать в локальный чат во время слежки</li>
+                        <li>Строго запрещается смотреть координаты во время слежки, использование F3, мини-карты, а также других модификаций, которые могут показывать координаты - также запрещены во время слежки</li>
+                        <li>Строго запрещается следить за игроком не имея весомой причины (жалобы от игроков, анти-чита, Администрации)</li>
+                        <li>Строго запрещается следить за Администрацией Проекта без разрешения</li>
+                    </ul>
+                    
+                    <p class="warning">За нарушение данных запретов любого участника Команды Проекта ждет серьезное наказание, вплоть до немедленного снятия с должности и занесения в Черный Список Команды Проекта.</p>
+                </div>
+
+                <div class="copyright">
+                    <p>EvelX ©️ 2025</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Регламент кандидатов -->
+        <section id="candidates" class="content-section">
+            <h2>Регламент Кандидатов</h2>
+            <div class="regulation-content">
+                <div class="regulation-header">
+                    <h3>EvelX | Регламент Кандидатов</h3>
+                    <p><strong>Утвержден:</strong> brom | Куратор</p>
+                    <p><strong>Регламент обновлен:</strong> 19.12.2021</p>
+                </div>
+                
+                <div class="regulation-section">
+                    <h4>EvelX | Глава I - Основное положение</h4>
+                    <ul>
+                        <li>Каждый человек, находящийся в беседе EvelX | Кандидаты, обязан быть ознакомлен с данным сводом правил. <strong>Незнание правил не освобождает от ответственности!</strong></li>
+                        <li class="warning">При нарушении хотя-бы одного из пунктов данного свода правил - Кандидат немедленно будет исключен из беседы. За серьезные нарушения вы будете занесены в Черный список Проекта | ЧСП или в Черный список Команды Проекта | ЧСКП.</li>
+                        <li>Каждый участник Команды Проекта (в том числе Кандидат), обязан соблюдать субординацию, общаясь в беседе EvelX | Кандидаты (а также других чатах Команды Проекта) с участниками беседы, а также высокопоставленными лицами; проявлять уважение к каждому участнику Команды Проекта и игрокам.</li>
+                        <li>В беседе EvelX | Кандидаты (а также других чатах Команды Проекта) запрещено оскорблять других участников чата, а также вышестоящих лиц, разводить конфликты, рассылать неадекватные сообщения, медиа.</li>
+                        <li>Каждый участник беседы EvelX | Кандидаты при поступлении на должность Стажера, обязан иметь хороший микрофон, небольшое понимание процесса Модерации, а также знание базовых программ (ShellBag Cleaner, Everything, Echo Journal | Journal Trace).</li>
+                        <li>Всем участникам Команды Проекта (в том числе Кандидатам) запрещено злоупотреблять ненормативной лексикой на сервере и других официальных ресурсах Проекта.</li>
+                        <li>Участникам беседы EvelX | Кандидаты (а также других чатах Команды Проекта) строго запрещается разглашать служебную информацию людям вне Команды Проекта.</li>
+                        <li>Аккаунт любого участника Команды Проекта (в том числе Кандидатов) - обязан быть привязан к сообществу ВКонтакте.</li>
+                        <li>Участникам Команды Проекта (в том числе Кандидатов) строго запрещается вводить в заблуждение, обманывать других участников Команды Проекта, Администрацию и игроков.</li>
+                        <li>Подавая заявку на должность Модераторы, вы должны осознавать, что идете сюда ради одной цели - помощь игрокам и серверу, а не для личной выгоды.</li>
+                        <li>Каждый участник Команды Проекта (в том числе Кандидаты) должны поставить в профиле ВКонтакте настоящие Имя Фамилия русскими буквами, при несоблюдении данного пункта, Куратор и его Заместитель вправе исключить вас из беседы.</li>
+                        <li class="warning">Кандидату запрещено что-либо удалять с компьютера ровно за сутки до проверки на запрещенные модификации и ПО. При нарушении правила, Куратор и его Заместитель вправе исключить вас из беседы.</li>
+                        <li>Если вы не прошли собеседование, то возможность подать заявку снова появляется спустя 31 день после последней попытки. Куратор и его Заместитель вправе увеличить срок повторной подачи заявки.</li>
+                        <li>Если вы имеете серьезные нарушения правил Проекта (использование читов, оскорбления игроков и/или их родных и близких и т.д.), то Куратор и его Заместитель вправе исключить вас из беседы.</li>
+                    </ul>
+                </div>
+
+                <div class="regulation-section">
+                    <h4>Этапы собеседования</h4>
+                    <ul>
+                        <li>Собеседование имеет право проводить только Куратор или его Заместитель, а также Отдел по набору сотрудников.</li>
+                        <li>Перед прохождением собеседования, вы обязаны пройти проверку на запрещенные модификации / ПО.</li>
+                        <li>Перед прохождением собеседования, вы обязаны изучить данный Регламент, а также Основные возможности участников Команды Проекта.</li>
+                        <li>После прохождения собеседования, вы попадаете под руководство Куратора и его Заместителя, все действия происходят непосредственно через них.</li>
+                    </ul>
+
+                    <div class="interview-process">
+                        <h5>Процесс собеседования проводится по следующей форме:</h5>
+                        <ol>
+                            <li>Куратор, его Заместитель или Отдел по набору сотрудников назначают время, в которое будет проводиться собеседование.</li>
+                            <li>Кандидат получает ссылку-приглашение на Discord-сервер и заходит в определенный голосовой канал.</li>
+                            <li>Кандидата перекидывают в определенный голосовой канал, после чего начинается собеседование.</li>
+                            <li>После успешного собеседования, Кандидата исключают из беседы EvelX | Кандидаты и добавляют в две другие: EvelX | Оповещения (для важных оповещений сотрудников), EvelX | Команда Проекта (для общения участников Команды Проекта).</li>
+                        </ol>
+                    </div>
+                </div>
+
+                <div class="regulation-section">
+                    <h4>EvelX | Глава II - Запрещенные модификации</h4>
+                    <div class="forbidden-mods">
+                        <p><strong>Список запрещенных модификаций:</strong></p>
+                        <p>PlayerHealthIndicators 1.0.0-1.17.1 (LunarClient Mod), Mouse Tweaks, Inventory Tweaks, Chest Stealer, Item Scroller, Quickstack, X-Ray, HitBoxes, Freecam, InvMove, Armor HotSwap, AutoBuy, Tweakeroo, SpamBot, Inventory Walk, Baritone, Chest locater, True Sight, Wheelie, Fabritone, MobHealthBar, HealthBarPlus, ToroHealth, InventoryTotem, WTHIT, Replay Mod, WorldTools, AxolotlClient, Clean cut, Click Crystal.</p>
+                        
+                        <p class="warning">А также запрещены другие интерпретации чит-функций и в том числе моды имеющие другие названия в отличии от приведенных в списке выше, но имеющие тот же функционал.</p>
+                    </div>
+                </div>
+
+                <div class="copyright">
+                    <p>EvelX ©️ 2025</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Мануалы -->
+        <section id="manuals" class="content-section">
+            <h2>Мануалы по Тирам</h2>
+            <div class="manuals-content">
+                <div class="manual-card tier-1" data-tier="1">
+                    <div class="manual-header">
+                        <span class="tier-badge tier-1">Tier 1</span>
+                        <h3>Высший ранг</h3>
+                        <p class="tier-description">Присваивается лучшим Проверяющим по усмотрению администратором Lavrinenko</p>
+                    </div>
+                    <div class="manual-content">
+                        <p class="placeholder-text">Мануал находится в разработке</p>
+                        <div class="manual-status">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="manual-card tier-2" data-tier="2">
+                    <div class="manual-header">
+                        <span class="tier-badge tier-2">Tier 2</span>
+                        <h3>Высокий ранг</h3>
+                        <p class="tier-description">Является преимуществом для Проверяющего</p>
+                    </div>
+                    <div class="manual-content">
+                        <p class="placeholder-text"><a href="https://docs.google.com/document/d/1eipght3ibT6bG3i7ytKH1PyM5CikUZDhxxY6HTZMRy0/edit?usp=sharing">Посмотреть мануал</a></p>
+                        <div class="manual-status">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="manual-card tier-3" data-tier="3">
+                    <div class="manual-header">
+                        <span class="tier-badge tier-3">Tier 3</span>
+                        <h3>Средний ранг</h3>
+                        <p class="tier-description">Критерий для повышения в Старшую Модерацию</p>
+                    </div>
+                    <div class="manual-content">
+                        <p class="placeholder-text"><a href="https://docs.google.com/document/d/1Tq7-xR7vo-F30U1-H5JrP3bnkJK6yF_IcGqYKqY_RsQ/edit?usp=sharing">Посмотреть мануал</a></p>
+                        <div class="manual-status">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="manual-card tier-4" data-tier="4">
+                    <div class="manual-header">
+                        <span class="tier-badge tier-4">Tier 4</span>
+                        <h3>Начальный ранг</h3>
+                        <p class="tier-description">Критерий для повышения в Модерацию</p>
+                    </div>
+                    <div class="manual-content">
+                        <p class="placeholder-text"><a href="https://docs.google.com/document/d/1WKeEWLRoVLyF6DBDClWQPyWc2je_iXORmNmKqxbBmfE/edit?usp=sharing">Посмотреть мануал</a></p>
+                        <div class="manual-status">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="manual-card tier-5" data-tier="5">
+                    <div class="manual-header">
+                        <span class="tier-badge tier-5">Tier 5</span>
+                        <h3>Входной ранг</h3>
+                        <p class="tier-description">Критерий для повышения в Младшую Модерацию</p>
+                    </div>
+                    <div class="manual-content">
+                        <p class="placeholder-text"><a href="https://docs.google.com/document/d/1K870YBxNwyR8vAIBTwOlARBWfDiyEbR20F3fJgRgxX8/edit?usp=sharing">Посмотреть мануал</a></p>
+                        <div class="manual-status">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 EvelX | Система Модерации. Все права защищены.</p>
+        </div>
+    </footer>
+
+    <script type="module" src="./script.js"></script>
+</body>
+
+</html>
